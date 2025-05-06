@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cascadia Code', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: lightskyblue;
+}
+
+.todo-container {
+  background: #2a252f;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 2px solid royalblue;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.task-input {
+  flex: 1;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.6rem;
+  border: none;
+}
+
+.add-button {
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: royalblue;
+  color: white;
+}
+
+.task-list-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  background: #3a3344;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.task-item input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+
+.task-text {
+  flex: 1;
+  text-align: left;
+}
+
+.completed-text {
+  color: gray;
+  /* text-decoration: line-through; */
+}
+
+.delete-button,
+.edit-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.delete-button i {
+  color: crimson;
+}
+
+.edit-button i {
+  color: salmon;
+}
+
+.summary {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+}
